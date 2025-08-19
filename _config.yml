@@ -3,14 +3,15 @@ url: "https://sakurakirp.github.io"
 baseurl: "/Documentation"
 
 remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
 search_enabled: true
-color_scheme: dark          # light | dark
-logo: "/assets/img/logo.png"
-
-aux_links:
-  "Serveur Discord":
-    - "https://discord.gg/ton-invite"
+logo: "/assets/img/Logo-SakurakiRP.png"     # fournis ton logo
+favicon_ico: "/assets/img/favicon.ico"
 
 nav_external_links:
-  - title: "SakurakiRP"
-    url: "https://sakurakirp.github.io"
+  - title: "Serveur Discord"
+    url: "https://discord.gg/ton-invite"
+    hide_icon: false
+
+# Pied de page
+footer_content: "© SakurakiRP — Documentation"

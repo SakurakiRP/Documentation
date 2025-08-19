@@ -1,5 +1,50 @@
-/* Accent SakurakiRP */
-:root {
-  --btn-primary-color: #e94560;
-  --link-color: #e94560;
+/* Palette & variables JTD (dark) */
+:root, [data-theme="dark"] {
+  --jtd-primary: #e94560;         /* accent principal */
+  --jtd-link-color: #e94560;
+  --jtd-text-color: #e5e7eb;
+  --jtd-bg: #0f0f14;
+  --jtd-sidebar-bg: #0c0c11;
+  --jtd-code-bg: #171821;
+  --jtd-border-color: #23232c;
 }
+
+/* Boutons accent */
+.btn-primary {
+  background-color: var(--jtd-primary);
+  border-color: var(--jtd-primary);
+}
+.btn:hover { filter: brightness(1.1); }
+
+/* Hero d’accueil */
+.sakura-hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  border-radius: 14px;
+  background:
+    radial-gradient(1200px 400px at 50% -10%, rgba(233,69,96,.25), rgba(0,0,0,0)),
+    linear-gradient(180deg, rgba(233,69,96,.10), rgba(0,0,0,0)),
+    url('{{ "/assets/img/hero.jpg" | relative_url }}') center / cover no-repeat,
+    #101016;
+  border: 1px solid var(--jtd-border-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.sakura-hero .hero-logo {
+  width: 76px; height: 76px; margin-bottom: .75rem;
+  filter: drop-shadow(0 6px 16px rgba(233,69,96,.3));
+}
+.sakura-hero h1 {
+  font-size: 3rem; margin: .25rem 0 .5rem; letter-spacing: .5px;
+}
+.sakura-hero .subtitle {
+  margin: 0 auto 1.25rem;
+  max-width: 760px;
+  color: #cbd5e1;
+}
+.sakura-hero .cta .btn { margin: .25rem .33rem; }
+
+/* Sidebar & contenu un peu plus “serrés” */
+.side-bar { width: 270px; }
+.main { max-width: 980px; }
