@@ -1,29 +1,49 @@
 /* === Accent SakurakiRP (méthode simple et sûre) === */
-/* Liens */
-a { color: #e94560; }
-a:hover { color: #ff6b81; text-decoration: underline; }
+/* Fond principal noir */
+body {
+  background-color: #000000 !important;
+}
 
-/* Boutons (tous) */
+/* Conteneur principal noir */
+.main-content-wrap {
+  background-color: #000000 !important;
+}
+
+/* Sidebar noire */
+.side-bar {
+  background-color: #000000 !important;
+}
+
+/* Liens */
+a { color: #ff1493; }
+a:hover { color: #ff69b4; text-decoration: underline; }
+
+/* Boutons (tous) en rose vif */
 .btn, .btn-primary {
-  background-color: #e94560 !important;
-  border: 1px solid #e94560 !important;
+  background-color: #ff1493 !important;
+  border: 1px solid #ff1493 !important;
   color: #fff !important;
+  border-radius: 8px !important;
 }
 .btn:hover, .btn-primary:hover {
-  background-color: #c92d47 !important;
-  border-color: #c92d47 !important;
+  background-color: #ff69b4 !important;
+  border-color: #ff69b4 !important;
   color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.3) !important;
 }
 
 /* Variante outline pour .btn non-primary si tu en utilises */
 .btn:not(.btn-primary){
   background: transparent !important;
-  color: #e94560 !important;
-  border: 1px solid #e94560 !important;
+  color: #ff1493 !important;
+  border: 1px solid #ff1493 !important;
 }
 .btn:not(.btn-primary):hover{
-  background: #e94560 !important;
+  background: #ff1493 !important;
   color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.3) !important;
 }
 
 /* --- Hero et layout (garde tes styles) --- */
@@ -33,14 +53,14 @@ a:hover { color: #ff6b81; text-decoration: underline; }
   padding: 4rem 1rem 3rem;
   border-radius: 14px;
   background:
-    radial-gradient(1200px 400px at 50% -10%, rgba(233,69,96,.25), rgba(0,0,0,0)),
-    linear-gradient(180deg, rgba(233,69,96,.10), rgba(0,0,0,0)),
+    radial-gradient(1200px 400px at 50% -10%, rgba(255,20,147,.25), rgba(0,0,0,0)),
+    linear-gradient(180deg, rgba(255,20,147,.10), rgba(0,0,0,0)),
     url('{{ "/assets/img/hero.jpg" | relative_url }}') center / cover no-repeat,
-    #101016;
-  border: 1px solid #23232c;
-  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    #000000;
+  border: 1px solid #ff1493;
+  box-shadow: 0 10px 30px rgba(255,20,147,.35);
 }
-.sakura-hero .hero-logo { width: 76px; height: 76px; margin-bottom: .75rem; filter: drop-shadow(0 6px 16px rgba(233,69,96,.3)); }
+.sakura-hero .hero-logo { width: 76px; height: 76px; margin-bottom: .75rem; filter: drop-shadow(0 6px 16px rgba(255,20,147,.3)); }
 .sakura-hero h1 { font-size: 3rem; margin: .25rem 0 .5rem; letter-spacing: .5px; }
 .sakura-hero .subtitle { margin: 0 auto 1.25rem; max-width: 760px; color: #cbd5e1; }
 .sakura-hero .cta .btn { margin: .25rem .33rem; }
