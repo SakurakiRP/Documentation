@@ -1,7 +1,7 @@
 /* === Accent SakurakiRP (méthode simple et sûre) === */
-/* Fond principal noir */
+/* Fond principal noir doux */
 body {
-  background-color: #000000 !important;
+  background-color: #19191B !important;
 }
 
 /* FORCER TOUS LES BOUTONS EN ROSE - priorité maximale */
@@ -37,14 +37,14 @@ body {
   border-color: #ff69b4 !important;
 }
 
-/* Conteneur principal noir */
+/* Conteneur principal noir doux */
 .main-content-wrap {
-  background-color: #000000 !important;
+  background-color: #19191B !important;
 }
 
-/* Sidebar noire */
+/* Sidebar noire douce */
 .side-bar {
-  background-color: #000000 !important;
+  background-color: #19191B !important;
 }
 
 /* Liens */
@@ -130,7 +130,7 @@ a[class*="btn-primary"]:hover, a.btn-primary:hover {
     radial-gradient(1200px 400px at 50% -10%, rgba(255,20,147,.25), rgba(0,0,0,0)),
     linear-gradient(180deg, rgba(255,20,147,.10), rgba(0,0,0,0)),
     url('{{ "/assets/img/hero.jpg" | relative_url }}') center / cover no-repeat,
-    #000000;
+    #19191B;
   border: 1px solid #ff1493;
   box-shadow: 0 10px 30px rgba(255,20,147,.35);
 }
@@ -141,3 +141,105 @@ a[class*="btn-primary"]:hover, a.btn-primary:hover {
 
 .side-bar { width: 270px; }
 .main { max-width: 980px; }
+
+/* === AMÉLIORATION DES COMMANDES === */
+
+/* Styling des tableaux de commandes */
+table {
+  background-color: rgba(255, 20, 147, 0.05) !important;
+  border: 1px solid rgba(255, 20, 147, 0.2) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(255, 20, 147, 0.1) !important;
+}
+
+/* Headers de tableaux */
+th {
+  background-color: rgba(255, 20, 147, 0.15) !important;
+  color: #ff69b4 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 1rem !important;
+  border-bottom: 2px solid rgba(255, 20, 147, 0.3) !important;
+}
+
+/* Cellules de tableaux */
+td {
+  padding: 0.75rem 1rem !important;
+  border-bottom: 1px solid rgba(255, 20, 147, 0.1) !important;
+  background-color: rgba(25, 25, 27, 0.7) !important;
+}
+
+/* Lignes alternées */
+tr:nth-child(even) td {
+  background-color: rgba(255, 20, 147, 0.03) !important;
+}
+
+/* Hover sur les lignes */
+tr:hover td {
+  background-color: rgba(255, 20, 147, 0.08) !important;
+  transform: translateX(2px);
+  transition: all 0.2s ease;
+}
+
+/* Amélioration des catégories dans la sidebar */
+.navigation-list-item {
+  margin-bottom: 0.5rem !important;
+}
+
+.navigation-list-item > .navigation-list-link {
+  background-color: rgba(255, 20, 147, 0.05) !important;
+  border: 1px solid rgba(255, 20, 147, 0.15) !important;
+  border-radius: 8px !important;
+  margin-bottom: 0.25rem !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.navigation-list-item > .navigation-list-link:hover {
+  background-color: rgba(255, 20, 147, 0.1) !important;
+  border-color: rgba(255, 20, 147, 0.3) !important;
+  transform: translateX(4px) !important;
+}
+
+/* Active/current page */
+.navigation-list-item > .navigation-list-link.active,
+.navigation-list-item > .navigation-list-link[aria-current="page"] {
+  background-color: rgba(255, 20, 147, 0.2) !important;
+  border-color: #ff1493 !important;
+  color: #ff69b4 !important;
+}
+
+/* Sous-catégories */
+.navigation-list-child-list .navigation-list-link {
+  background-color: rgba(255, 20, 147, 0.03) !important;
+  border-left: 3px solid rgba(255, 20, 147, 0.2) !important;
+  margin-left: 1rem !important;
+  padding-left: 1rem !important;
+  border-radius: 0 6px 6px 0 !important;
+}
+
+/* Titres de sections */
+h1, h2, h3 {
+  color: #ff69b4 !important;
+  border-bottom: 2px solid rgba(255, 20, 147, 0.2) !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Code blocks et inline code */
+code {
+  background-color: rgba(255, 20, 147, 0.1) !important;
+  color: #ff69b4 !important;
+  border: 1px solid rgba(255, 20, 147, 0.2) !important;
+  border-radius: 4px !important;
+  padding: 0.2rem 0.4rem !important;
+}
+
+pre {
+  background-color: rgba(25, 25, 27, 0.8) !important;
+  border: 1px solid rgba(255, 20, 147, 0.2) !important;
+  border-radius: 8px !important;
+  border-left: 4px solid #ff1493 !important;
+}
