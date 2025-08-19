@@ -1,8 +1,10 @@
 ---
-layout: home
-title: "Documentation"
+layout: default
+title: Accueil
+nav_order: 1
 ---
 
-# Docs SakurakiRP
-- [Installation](installation.md)
-- [Commandes](commandes.md)
+# Documentation SakurakiRP
+
+- [Installation](installation.md){: .btn }
+- [Commandes](commandes.md){: .btn .btn-primary }

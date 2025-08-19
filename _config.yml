@@ -1,9 +1,16 @@
 title: "SakurakiRP – Documentation"
-theme: minima
 url: "https://sakurakirp.github.io"
-baseurl: "/Documentation"   # laisse comme ça pour ton site de projet
-markdown: kramdown
+baseurl: "/Documentation"
 
-# Minima en dark
-minima:
-  skin: dark        # classic | dark | auto
+remote_theme: just-the-docs/just-the-docs
+search_enabled: true
+color_scheme: dark          # light | dark
+logo: "/assets/img/logo.png"
+
+aux_links:
+  "Serveur Discord":
+    - "https://discord.gg/ton-invite"
+
+nav_external_links:
+  - title: "SakurakiRP"
+    url: "https://sakurakirp.github.io"
