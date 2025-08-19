@@ -1,5 +1,9 @@
 title: "SakurakiRP – Documentation"
 theme: minima
 url: "https://sakurakirp.github.io"
-baseurl: "/Documentation"   # IMPORTANT pour un site de projet
+baseurl: "/Documentation"   # laisse comme ça pour ton site de projet
 markdown: kramdown
+
+# Minima en dark
+minima:
+  skin: dark        # classic | dark | auto
