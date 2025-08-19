@@ -3,7 +3,7 @@ url: "https://sakurakirp.github.io"
 baseurl: "/Documentation"
 
 remote_theme: just-the-docs/just-the-docs
-color_scheme: dark
+color_scheme: sakuraki
 plugins:
   - jekyll-remote-theme
 search_enabled: true
@@ -11,7 +11,7 @@ logo: "/assets/img/Logo-SakurakiRP.png"     # fournis ton logo
 favicon_ico: "/assets/img/favicon.ico"
 
 nav_external_links:
-  - title: "Serveur Discord"
+  - title: "Notre Support"
     url: "https://discord.gg/jy6g3CkGcW"
     hide_icon: false
 
