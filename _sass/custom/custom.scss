@@ -146,39 +146,40 @@ a[class*="btn-primary"]:hover, a.btn-primary:hover {
 
 /* Styling des tableaux de commandes */
 table {
-  background-color: rgba(255, 20, 147, 0.05) !important;
-  border: 1px solid rgba(255, 20, 147, 0.2) !important;
+  background-color: rgba(40, 40, 44, 0.8) !important;
+  border: 1px solid rgba(80, 80, 88, 0.6) !important;
   border-radius: 12px !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 16px rgba(255, 20, 147, 0.1) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* Headers de tableaux */
 th {
   background-color: rgba(255, 20, 147, 0.15) !important;
-  color: #ff69b4 !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   padding: 1rem !important;
-  border-bottom: 2px solid rgba(255, 20, 147, 0.3) !important;
+  border-bottom: 2px solid rgba(255, 20, 147, 0.4) !important;
 }
 
 /* Cellules de tableaux */
 td {
   padding: 0.75rem 1rem !important;
-  border-bottom: 1px solid rgba(255, 20, 147, 0.1) !important;
-  background-color: rgba(25, 25, 27, 0.7) !important;
+  border-bottom: 1px solid rgba(80, 80, 88, 0.3) !important;
+  background-color: rgba(30, 30, 34, 0.9) !important;
+  color: #e0e0e0 !important;
 }
 
 /* Lignes alternées */
 tr:nth-child(even) td {
-  background-color: rgba(255, 20, 147, 0.03) !important;
+  background-color: rgba(35, 35, 39, 0.9) !important;
 }
 
 /* Hover sur les lignes */
 tr:hover td {
-  background-color: rgba(255, 20, 147, 0.08) !important;
+  background-color: rgba(255, 20, 147, 0.05) !important;
   transform: translateX(2px);
   transition: all 0.2s ease;
 }
@@ -189,57 +190,78 @@ tr:hover td {
 }
 
 .navigation-list-item > .navigation-list-link {
-  background-color: rgba(255, 20, 147, 0.05) !important;
-  border: 1px solid rgba(255, 20, 147, 0.15) !important;
+  background-color: rgba(40, 40, 44, 0.6) !important;
+  border: 1px solid rgba(80, 80, 88, 0.4) !important;
   border-radius: 8px !important;
   margin-bottom: 0.25rem !important;
   padding: 0.75rem 1rem !important;
   transition: all 0.2s ease !important;
+  color: #d0d0d0 !important;
 }
 
 .navigation-list-item > .navigation-list-link:hover {
-  background-color: rgba(255, 20, 147, 0.1) !important;
+  background-color: rgba(60, 60, 66, 0.8) !important;
   border-color: rgba(255, 20, 147, 0.3) !important;
   transform: translateX(4px) !important;
+  color: #ffffff !important;
 }
 
 /* Active/current page */
 .navigation-list-item > .navigation-list-link.active,
 .navigation-list-item > .navigation-list-link[aria-current="page"] {
-  background-color: rgba(255, 20, 147, 0.2) !important;
+  background-color: rgba(255, 20, 147, 0.15) !important;
   border-color: #ff1493 !important;
-  color: #ff69b4 !important;
+  color: #ffffff !important;
 }
 
 /* Sous-catégories */
 .navigation-list-child-list .navigation-list-link {
-  background-color: rgba(255, 20, 147, 0.03) !important;
-  border-left: 3px solid rgba(255, 20, 147, 0.2) !important;
+  background-color: rgba(30, 30, 34, 0.8) !important;
+  border-left: 3px solid rgba(255, 20, 147, 0.4) !important;
   margin-left: 1rem !important;
   padding-left: 1rem !important;
   border-radius: 0 6px 6px 0 !important;
+  color: #c0c0c0 !important;
 }
 
 /* Titres de sections */
 h1, h2, h3 {
-  color: #ff69b4 !important;
-  border-bottom: 2px solid rgba(255, 20, 147, 0.2) !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid rgba(255, 20, 147, 0.3) !important;
   padding-bottom: 0.5rem !important;
   margin-bottom: 1.5rem !important;
 }
 
+/* Titres avec émojis - garde la couleur rose pour les accents */
+h1 .emoji, h2 .emoji, h3 .emoji {
+  color: #ff69b4 !important;
+}
+
 /* Code blocks et inline code */
 code {
-  background-color: rgba(255, 20, 147, 0.1) !important;
+  background-color: rgba(40, 40, 44, 0.8) !important;
   color: #ff69b4 !important;
-  border: 1px solid rgba(255, 20, 147, 0.2) !important;
+  border: 1px solid rgba(80, 80, 88, 0.6) !important;
   border-radius: 4px !important;
   padding: 0.2rem 0.4rem !important;
 }
 
 pre {
-  background-color: rgba(25, 25, 27, 0.8) !important;
-  border: 1px solid rgba(255, 20, 147, 0.2) !important;
+  background-color: rgba(30, 30, 34, 0.9) !important;
+  border: 1px solid rgba(80, 80, 88, 0.6) !important;
   border-radius: 8px !important;
   border-left: 4px solid #ff1493 !important;
+}
+
+/* Amélioration du texte principal */
+.main-content p, .main-content li {
+  color: #e0e0e0 !important;
+}
+
+/* Liens dans le contenu */
+.main-content a:not(.btn) {
+  color: #ff69b4 !important;
+}
+.main-content a:not(.btn):hover {
+  color: #ff1493 !important;
 }
