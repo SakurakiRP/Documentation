@@ -4,17 +4,26 @@ title: Accueil
 nav_order: 1
 ---
 
-<div class="hero sakura-hero">
-  <img class="hero-logo" src="{{ '/assets/img/Logo-SakurakiRP.png' | relative_url }}" alt="SakurakiRP">
-  <h1>SakurakiRP</h1>
-  <p class="subtitle">Découvrez les meilleurs serveurs <b>RolePlay</b> français !</p>
-  <p class="cta">
-    <a class="btn btn-primary" href="https://sakurakirp.github.io">Explorer les serveurs</a>
-    <a class="btn" href="{{ '/commandes/' | relative_url }}">Commandes</a>
-    <a class="btn" href="{{ '/installation' | relative_url }}">Installation</a>
-  </p>
-</div>
+# 🌸 Accueil
 
-## Documentation SakurakiRP
-- [Installation](installation.md){: .btn }
-- [Commandes](commandes/){: .btn .btn-primary }
+Bienvenue sur la documentation officielle de **SakurakiRP** ! Vous trouverez ici toutes les informations nécessaires pour maîtriser notre plateforme de RolePlay française : guides détaillés, tutoriels complets et réponses à vos questions.
+
+## 📖 Comment naviguer dans cette documentation
+
+Notre documentation est organisée de manière **claire et intuitive** pour faciliter votre apprentissage :
+
+- **Les commandes** sont regroupées par catégories thématiques (Globales, Roleplay, Fun, etc.)
+- **Les tutoriels** vous accompagnent pas à pas dans la découverte de SakurakiRP
+- **La barre de recherche** vous permet de trouver rapidement une fonctionnalité spécifique
+
+## 🚀 Accès rapide
+
+<p class="cta">
+  <a class="btn btn-primary" href="https://www.sakurakirp.fr/serveurs">Explorer les serveurs</a>
+  <a class="btn" href="{{ '/commandes/' | relative_url }}">Commandes</a>
+  <a class="btn" href="{{ '/installation' | relative_url }}">Installation</a>
+</p>
+
+## 💬 Besoin d'aide ?
+
+Si vous ne trouvez pas l'information recherchée ou si vous rencontrez des difficultés, notre équipe de support est disponible sur **[Discord](https://discord.gg/jy6g3CkGcW)** pour vous accompagner dans votre découverte de SakurakiRP.
