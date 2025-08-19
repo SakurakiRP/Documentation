@@ -4,6 +4,20 @@ body {
   background-color: #000000 !important;
 }
 
+/* FORCER TOUS LES BOUTONS EN ROSE - priorité maximale */
+[class*="btn"] {
+  background-color: #ff1493 !important;
+  background: #ff1493 !important;
+  border-color: #ff1493 !important;
+  color: #ffffff !important;
+}
+[class*="btn"]:hover {
+  background-color: #ff69b4 !important;
+  background: #ff69b4 !important;
+  border-color: #ff69b4 !important;
+  color: #ffffff !important;
+}
+
 /* Conteneur principal noir */
 .main-content-wrap {
   background-color: #000000 !important;
@@ -18,19 +32,38 @@ body {
 a { color: #ff1493; }
 a:hover { color: #ff69b4; text-decoration: underline; }
 
-/* Boutons (tous) en rose vif */
-.btn, .btn-primary {
+/* Boutons (tous) en rose vif - règles très spécifiques pour surcharger le thème */
+.btn, .btn-primary, a.btn, a.btn-primary, .btn-primary.btn, .btn.btn-primary {
   background-color: #ff1493 !important;
+  background: #ff1493 !important;
   border: 1px solid #ff1493 !important;
+  border-color: #ff1493 !important;
   color: #fff !important;
   border-radius: 8px !important;
 }
-.btn:hover, .btn-primary:hover {
+.btn:hover, .btn-primary:hover, a.btn:hover, a.btn-primary:hover, 
+.btn-primary.btn:hover, .btn.btn-primary:hover {
   background-color: #ff69b4 !important;
+  background: #ff69b4 !important;
   border-color: #ff69b4 !important;
   color: #fff !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 20, 147, 0.3) !important;
+}
+
+/* Force le style pour tous les éléments avec la classe btn dans le hero */
+.sakura-hero .btn, .sakura-hero .btn-primary {
+  background-color: #ff1493 !important;
+  background: #ff1493 !important;
+  border: 1px solid #ff1493 !important;
+  border-color: #ff1493 !important;
+  color: #fff !important;
+}
+.sakura-hero .btn:hover, .sakura-hero .btn-primary:hover {
+  background-color: #ff69b4 !important;
+  background: #ff69b4 !important;
+  border-color: #ff69b4 !important;
+  color: #fff !important;
 }
 
 /* Variante outline pour .btn non-primary si tu en utilises */
