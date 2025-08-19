@@ -11,3 +11,13 @@
   /* (optionnel) accents généraux */
   --brand-color: #e94560;
 }
+
+// Hérite du schéma dark natif
+@import "color_schemes/dark";
+
+// Accent SakurakiRP
+$link-color: #e94560;
+$link-hover-color: #ff6b81;
+
+$btn-primary-color: #e94560;
+$btn-primary-hover-color: #c92d47;
